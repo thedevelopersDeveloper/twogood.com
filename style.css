@@ -147,11 +147,130 @@ html,body{
 	background-color:#919191;
 	transform:translate(-50%,-50%) scale(0);
 }
+#nav{
+	height:17vh;
+	width:100%;
+	background-color:transparent;
+	display:flex;
+	padding:0.5vw 1vw;
+	align-items:center;
+	overflow:hidden;
+	justify-content:space-between;
+	position:fixed;
+	z-index:999999;
+}
+#nav #logo-sec{
+	height:15.5vh;
+	overflow:hidden;
+	width:9vw;
+	padding:1vw 1vw;
+}
+#nav #logo-sec svg{
+	display:block;
+	margin-bottom:1vw;
+}
+#nav-part2{
+	height:100%;
+	display:flex;
+	align-items:flex-start;
+	width:49%;
+}
+#nav-part2 #nav-compo{
+	height:100%;
+	display:flex;
+	width:100%;
+	align-items:flex-start;
+	justify-content:flex-end;
+	gap:4.5vw;
+	padding:1vw 0.5vw;
+}
+#nav-part2 #nav-compo #icons-cont{
+	display:flex;
+	height:5vh;
+	width:9.5vw;
+	background-color:#fff;
+	border-radius:20px;
+	align-items:center;
+	padding:0 1vw;
+	justify-content:space-between;
+}
+#nav-part2 #nav-compo li{
+	list-style:none;
+}
+#nav-part2 #nav-compo li a svg{
+	height:2.2vh;
+	margin-left:0.3vw;
+}
+#nav-part2 #nav-compo li a{
+	text-decoration:none;
+	color:#000;
+	font-size:1vw;
+	text-transform:uppercase;
+	font-weight:100;
+	margin-right:0.1vw;
+}
+#nav-part2 #nav-compo li a span{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	height:1.5vh;
+	width:2vw;
+	display:inline-block;
+}
+#links{
+	display:flex;
+	height:100%;
+	width:100%;
+	justify-content:space-evenly;
+}
 @media (max-width:900px){
+	#nav{
+		height:10vh;
+	}
+	#nav-part1{
+		height: 100%;
+		width: 40%;
+		overflow: hidden;
+	}
+	#nav-part1 #logo-sec{
+		height:14vh;
+		overflow: hidden;
+		width: 100%;
+		padding: 1vw 1vw;
+	}
+	#nav-part1 #logo-sec svg{
+		display: block;
+		margin-bottom: 5vw;
+		height: 67%;
+	}
+	#links{
+		display:none;
+		height:100%;
+		width:100%;
+		justify-content:space-evenly;
+		opacity:0;
+	}
+	#nav-part2 #nav-compo #icons-cont{
+		display:flex;
+		height:5vh;
+		width:50%;
+		background-color:#f7f7f7;
+		border-radius:20px;
+		align-items:center;
+		justify-content:space-between;
+		padding:0 1.2vh;
+	}
+	#nav-part2 #nav-compo li a span{
+		border-top:1px solid black;
+		border-bottom:1px solid black;
+		height:1vh;
+		width:4vw;
+		display:inline-block;
+	}
 	#page1{
 		padding-top:35vw;
 		padding-right: 5vw;
 		padding-left: 5vw;
+		min-height:52vh;
 	}
 	#page1 h1{
 		font-size:15vw;
@@ -164,8 +283,8 @@ html,body{
 	}
 	#divider-cont{
 		height:5vw;
-		margin-top:3vw;
-		margin-bottom:4vw;
+		margin-top:2vh;
+		margin-bottom:2vh;
 	}
 	#divider-cont #divider{
 		height:3.5vw;
